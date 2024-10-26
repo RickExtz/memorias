@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Minhas Memórias do Morelli Rick Oliveira 2024 3ºD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- barra lateral/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">FECHAR</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMÓRIAS</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TURMA</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LEMBRANÇAS</a>
+  <a href="#KKKKK" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ETERNAS</a> 
+
+</nav>
+
+<!-- Menu superior em telas pequenas -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">MEMÓRIAS</span>
+  <img src="img/download.png" class="morelli">
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !CONTEÚDO DA PÁGINA! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Grade de fotos -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="img/bobo.png" style="width:100%" onclick="onClick(this)" alt="Oi buiu lindao, 1° dia de aula no 3° ano.">
+      <img src="img/eueela.png" style="width:100%" onclick="onClick(this)" alt="eu i ela no 1° ano do ensino médio, achei que ia ser só uma ficadinha e marcha, mas...">
+      <img src="img/eueela3.png" style="width:100%" onclick="onClick(this)" alt="Paulinho e suas peripécias, sdds dele">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="img/stazekavitu.png" style="width:100%" onclick="onClick(this)" alt="staseka e virtus">
+      <img src="img/pauloretardado.png" style="width:100%" onclick="onClick(this)" alt="quando eu vi ela, percebi que ela tinha algo diferente mas não liguei, até o momento em que tocamos nossos lábios pela primeira vez,  tive a certeza que ela era diferente, achei incrível, começarmos um relacionamento mesmo com antepassados traumáticos, medo e inseguranças, superamos tudo com poucas brigas e apenas uma separação, graças a Deus, eu amo muito essa retardada !">
+      <img src="img/viado.png" style="width:100%" onclick="onClick(this)" alt="tia me obrigou a usar isso, essa baby look, n ficou tão ruim">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="img/eueatia.png" style="width:100%" onclick="onClick(this)" alt="eu e a tia da limpeza 😄">
+      <img src="img/passeio.png" style="width:100%" onclick="onClick(this)" alt="eu e a fernanda no passeio, esse dia foi mó dhr, primeira ficada de eu e da rata da thayla">
+      <img src="img/make.png" style="width:100%" onclick="onClick(this)" alt="Polyana makes e unhas">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img/euela2.png" style="width:100%" onclick="onClick(this)" alt="odiei a ideia de separarem eu e ela, n entendi o pq disso, achei injustiça pois a polyana e o chris ficaram na mema">
+      <img src="img/staseka.png" style="width:100%" onclick="onClick(this)" alt="staseka e suas bobeiras">
+      <img src="img/2doido.png" style="width:100%" onclick="onClick(this)" alt="fala umas coisas sem noção, odeio mas é parceiro">
+    </div>
+  </div>
+
+
+  
+  <!-- Modal para imagens em tamanho real com um clique-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- Professores  -->
+ <div class="imagens">
+<div id="about">
+  <h4 class="subtitulos"><b>3ºD</b></h4>
+  <h4 class="subtitulos"><b>SIMPLESMENTE A MELHOR TURMA SEMPRE!!!</b></h4>
+<div class="w3-row w3-grayscale-min"> 
+  <div class="w3-quarter">
+    <img src="img/vitusumiu.png" style="width:100%" onclick="onClick(this)" alt="visto pela última vez mês passado, desistiu da escola burrao">  
+    <img src="img/lanche.png" style="width:100%" onclick="onClick(this)" alt="os lanche dentro de sala são os melhores (fico bonito até comendo slk)">  
+  </div>
+  
+ <div class="w3-quarter">
+  <img src="img/patricia.png" style="width: 100%" onclick="onClick(this)" alt="patrícia era parceira, pena que abandonou nois e entrou um professor CHATO">
+  <img src="img/paulo.png" style="width: 100%" onclick="onClick(this)" alt="óia o paulo ai e suas picuinhas"> 
+  </div>
+  <div class="w3-quarter">
+    <img src="img/crhis.png" style="width: 100%" onclick="onClick(this)" alt="christopher, brigam 2 vezes na semana ( mínimo ) KKKKK">
+    <img src="img/euela4.png" style="width: 100%" onclick="onClick(this)" alt="óia eu e ela aí, pique casal bonnye e clyde">
+    </div>
+    <div class="w3-quarter">
+      <img src="img/poly.png" style="width: 100%" onclick="onClick(this)" alt="polyana e o...">
+      <img src="img/pau.png" style="width: 100%" onclick="onClick(this)" alt="esse dia foi loco">
+      </div>
+</div>
+</div>
+ 
+  
+<!-- MOMENTOS  -->
+<div id="contact">
+  <h4 class="subtitulos"><b>LEMBRANÇAS</b></h4>
+<div class="w3-row w3-grayscale-min">
+  
+  <div class="w3-quarter">
+    <img src="img/eutorando.png" style="width:100%" onclick="onClick(this)" alt="aaa miguel safado, torador nato">
+ </div>
+
+ <div class="w3-quarter">
+  <img src="img/try.png" style="width:100%" onclick="onClick(this)" alt="pula na mira do tryhard">
+</div>
+
+<div class="w3-quarter">
+  <img src="img/cagando.png" style="width:100%" onclick="onClick(this)" alt="alypher fazendo alypher">
+</div>
+
+  <div class="w3-quarter">
+  <img src="img/camisa.png" style="width:100%" onclick="onClick(this)" alt="não gostei dessa camisa quando peguei ">
+
+</div>
+
+<!-- ETERNAS  -->
+<div id="KKKKK">
+  <h4 class="subtitulos"><b>ETERNAS</b></h4>
+<div class="w3-row w3-grayscale-min">
+  <div class="w3-quarter">
+    <img src="img/3d.png" style="width:100%" onclick="onClick(this)" alt="mas até que eu achei legal a camisa dps, uma das mais bonitas talvez, pena que ficou pequena em mim, consigo usar apenas com uma blusa em baixo">
+ </div>
+
+ <div class="w3-quarter">
+  <img src="img/59d.png" style="width:100%" onclick="onClick(this)" alt="é os d né buiu ">
+</div>
+
+<div class="w3-quarter">
+  <img src="img/cadefelix.png" style="width:100%" onclick="onClick(this)" alt="cadê o Félix Torres?KKKKKK">
+</div>
+
+  <div class="w3-quarter">
+  <img src="img/futebol.png" style="width:100%" onclick="onClick(this)" alt="é isso buiu, professor mais corinthiano que eu já conheci e mais lindao, i love u meu kongfupança ❤.">
+
+</div>
+
+
+<!-- Conteúdo da página final -->
+</div>
+
+<script>
+// Script para abrir e fechar a barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galeria de imagens modais
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+<!-- Rodapé -->
+<div class="copyright">
+  2024 Rick Oliveira Nobre de Souza. Todos os direitos reservados.
+</div>  
+
+</body>
+</html>
